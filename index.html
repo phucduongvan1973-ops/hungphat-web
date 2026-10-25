@@ -14,23 +14,26 @@
   <div class="wrap bar">
     <a class="brand" href="#"><img src="img/logo.svg" alt="Logo Hưng Phát"><span>Hưng Phát<small>Gifts &amp; Souvenirs · Huế</small></span></a>
     <nav>
-      <a href="#sanpham">Sản phẩm</a>
-      <a href="#gioithieu">Giới thiệu</a>
-      <a href="#lienhe">Liên hệ</a>
+      <a href="#sanpham" data-en="Products">Sản phẩm</a>
+      <a href="#gioithieu" data-en="About">Giới thiệu</a>
+      <a href="#lienhe" data-en="Contact">Liên hệ</a>
     </nav>
-    <button class="cartbtn" id="openCart" aria-label="Mở giỏ hàng">Giỏ hàng <b id="cartCount">0</b></button>
+    <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
+      <button data-lang="vi" class="on">VI</button><button data-lang="en">EN</button>
+    </div>
+    <button class="cartbtn" id="openCart" aria-label="Giỏ hàng"><span data-en="Cart">Giỏ hàng</span> <b id="cartCount">0</b></button>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap heroin">
     <div>
-      <p class="kicker">Cửa hàng lưu niệm tại Cố đô Huế</p>
-      <h1>Quà Huế gửi người thương</h1>
-      <p class="lead">Nón lá, gốm Bát Tràng, đũa gỗ trắc cẩn xà cừ, lư xông trầm, trang sức sừng, đá phong thủy. Chọn tại cửa hàng hoặc đặt qua Zalo, giao toàn quốc.</p>
+      <p class="kicker" data-en="Souvenir shop in the old capital of Hue">Cửa hàng lưu niệm tại Cố đô Huế</p>
+      <h1 data-en="Gifts from Hue for the ones you love">Quà Huế gửi người thương</h1>
+      <p class="lead" data-en="Conical hats, Bat Trang ceramics, mother-of-pearl wooden chopsticks, incense burners, horn jewelry and feng shui stones. Pick them up in the shop or order through Zalo.">Nón lá, gốm Bát Tràng, đũa gỗ trắc cẩn xà cừ, lư xông trầm, trang sức sừng, đá phong thủy. Chọn tại cửa hàng hoặc đặt qua Zalo, giao toàn quốc.</p>
       <div class="cta">
-        <a class="btn" href="#sanpham">Xem sản phẩm</a>
-        <a class="btn ghost" href="https://zalo.me/0914101032" target="_blank" rel="noopener">Nhắn Zalo</a>
+        <a class="btn" href="#sanpham" data-en="Browse products">Xem sản phẩm</a>
+        <a class="btn ghost" href="https://zalo.me/0914101032" target="_blank" rel="noopener" data-en="Message on Zalo">Nhắn Zalo</a>
       </div>
     </div>
     <img src="img/shop/shop10.jpg" alt="Tường neon Hung Phat Souvenirs" class="heroimg">
@@ -38,13 +41,13 @@
 </section>
 
 <section class="wrap" id="sanpham">
-  <h2>Sản phẩm</h2>
+  <h2 data-en="Products">Sản phẩm</h2>
   <div class="tools">
-    <input id="q" type="search" placeholder="Tìm sản phẩm, ví dụ: nón lá, đũa, bình gốm" aria-label="Tìm sản phẩm">
+    <input id="q" type="search" placeholder="Tìm sản phẩm, ví dụ: nón lá, đũa, bình gốm" data-en-ph="Search, e.g. conical hat, chopsticks, vase" aria-label="Tìm sản phẩm">
     <select id="sort" aria-label="Sắp xếp">
-      <option value="">Mặc định</option>
-      <option value="asc">Giá thấp đến cao</option>
-      <option value="desc">Giá cao đến thấp</option>
+      <option value="" data-en="Default order">Mặc định</option>
+      <option value="asc" data-en="Price: low to high">Giá thấp đến cao</option>
+      <option value="desc" data-en="Price: high to low">Giá cao đến thấp</option>
     </select>
   </div>
   <div class="chips" id="chips"></div>
@@ -55,9 +58,9 @@
 <section class="about" id="gioithieu">
   <div class="wrap aboutin">
     <div>
-      <h2>Về Hưng Phát</h2>
-      <p>Nếu bạn tới Huế du lịch, đừng quên ghé Cửa hàng Hưng Phát tại 50 Phạm Ngũ Lão, thành phố Huế để mua quà lưu niệm cho người thân và gia đình.</p>
-      <p>Ở xa chưa đến được, bạn chọn món trên web rồi nhắn Zalo 0914.10.10.32, cửa hàng gói quà và gửi đi.</p>
+      <h2 data-en="About Hung Phat">Về Hưng Phát</h2>
+      <p data-en="If you are visiting Hue, don't forget to stop by Hung Phat Souvenirs at 50 Pham Ngu Lao, Hue city, to buy gifts for your family and loved ones.">Nếu bạn tới Huế du lịch, đừng quên ghé Cửa hàng Hưng Phát tại 50 Phạm Ngũ Lão, thành phố Huế để mua quà lưu niệm cho người thân và gia đình.</p>
+      <p data-en="Can't make it to Hue? Pick your items on this site and message us on Zalo 0914.10.10.32. We wrap the gift and send it.">Ở xa chưa đến được, bạn chọn món trên web rồi nhắn Zalo 0914.10.10.32, cửa hàng gói quà và gửi đi.</p>
     </div>
     <div class="photos">
       <img src="img/shop/shop01.jpg" alt="Mặt tiền cửa hàng" loading="lazy">
@@ -71,13 +74,13 @@
   <div class="wrap foot">
     <div>
       <h3>Cửa hàng lưu niệm Hưng Phát</h3>
-      <p>50 Phạm Ngũ Lão, Phường Thuận Hóa, Thành phố Huế</p>
-      <p>Điện thoại / Zalo: <a href="tel:0914101032">0914.10.10.32</a></p>
+      <p data-en="50 Pham Ngu Lao, Thuan Hoa Ward, Hue City">50 Phạm Ngũ Lão, Phường Thuận Hóa, Thành phố Huế</p>
+      <p><span data-en="Phone / Zalo:">Điện thoại / Zalo:</span> <a href="tel:0914101032">0914.10.10.32</a></p>
     </div>
     <div class="cta">
-      <a class="btn" href="tel:0914101032">Gọi ngay</a>
+      <a class="btn" href="tel:0914101032" data-en="Call now">Gọi ngay</a>
       <a class="btn ghost light" href="https://zalo.me/0914101032" target="_blank" rel="noopener">Zalo</a>
-      <a class="btn ghost light" href="https://www.google.com/maps/search/?api=1&query=50+Ph%E1%BA%A1m+Ng%C5%A9+L%C3%A3o+Hu%E1%BA%BF" target="_blank" rel="noopener">Chỉ đường</a>
+      <a class="btn ghost light" href="https://www.google.com/maps/search/?api=1&query=50+Ph%E1%BA%A1m+Ng%C5%A9+L%C3%A3o+Hu%E1%BA%BF" target="_blank" rel="noopener" data-en="Directions">Chỉ đường</a>
     </div>
   </div>
   <p class="copy">© Hưng Phát Souvenirs</p>
@@ -93,7 +96,7 @@
       <h3 id="pmName"></h3>
       <p class="price" id="pmPrice"></p>
       <div class="desc" id="pmDesc"></div>
-      <div class="cta"><button class="btn" id="pmAdd">Thêm vào giỏ</button></div>
+      <div class="cta"><button class="btn" id="pmAdd" data-en="Add to cart">Thêm vào giỏ</button></div>
     </div>
   </div>
 </div>
@@ -102,21 +105,22 @@
 <div class="modal" id="cm" hidden>
   <div class="panel cart">
     <button class="x" data-close>×</button>
-    <h3>Giỏ hàng</h3>
+    <h3 data-en="Your cart">Giỏ hàng</h3>
     <div id="cartList"></div>
     <p class="total" id="cartTotal"></p>
     <form id="orderForm" autocomplete="on">
-      <input name="name" placeholder="Họ tên" required>
-      <input name="phone" type="tel" placeholder="Số điện thoại" required>
-      <input name="addr" placeholder="Địa chỉ nhận hàng" required>
-      <input name="note" placeholder="Ghi chú (không bắt buộc)">
-      <button class="btn" type="submit">Gửi đơn qua Zalo</button>
-      <p class="hint">Bấm gửi, nội dung đơn sẽ được sao chép và mở Zalo cửa hàng. Anh chị dán vào khung chat, cửa hàng xác nhận phí ship và cách thanh toán.</p>
+      <input name="name" placeholder="Họ tên" data-en-ph="Full name" required>
+      <input name="phone" type="tel" placeholder="Số điện thoại" data-en-ph="Phone number / Zalo" required>
+      <input name="addr" placeholder="Địa chỉ nhận hàng" data-en-ph="Delivery address" required>
+      <input name="note" placeholder="Ghi chú (không bắt buộc)" data-en-ph="Note (optional)">
+      <button class="btn" type="submit" data-en="Send order via Zalo">Gửi đơn qua Zalo</button>
+      <p class="hint" data-en="Tap send: your order is copied and Zalo opens. Paste it into the chat. The shop will confirm shipping fee and payment.">Bấm gửi, nội dung đơn sẽ được sao chép và mở Zalo cửa hàng. Anh chị dán vào khung chat, cửa hàng xác nhận phí ship và cách thanh toán.</p>
     </form>
   </div>
 </div>
 
 <script src="data.js"></script>
+<script src="en.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
