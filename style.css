@@ -56,7 +56,7 @@ nav a:hover{color:var(--plum)}
 .card .add{margin-top:auto;border:1px solid var(--plum);background:#fff;color:var(--plum);border-radius:8px;padding:7px;cursor:pointer;font-size:14px}
 .card .add:hover{background:var(--plum);color:#fff}
 
-.about{background:var(--cream);margin-top:48px;padding:8px 0 40px}
+.about{background:var(--cream);padding:8px 0 32px;border-bottom:1px solid var(--line)}
 .aboutin{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:center}
 .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .photos img{aspect-ratio:3/4;object-fit:cover;border-radius:10px;width:100%}
@@ -90,7 +90,8 @@ form{display:grid;gap:8px}
   .heroin,.aboutin,.pdetail{grid-template-columns:1fr}
   .hero h1{font-size:32px}
   .heroimg{max-height:300px;width:100%;margin:0}
-  nav{display:none}
+  .bar{flex-wrap:wrap}
+  nav{order:5;width:100%;justify-content:space-around;margin:0;padding-top:4px;border-top:1px solid var(--line)}
   .cartbtn{margin-left:auto}
   .grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .brand{font-size:18px}
