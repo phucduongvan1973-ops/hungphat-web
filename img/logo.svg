@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <title>Hưng Phát - Logo A: Nón lá và hoa sen</title>
+  <circle cx="300" cy="300" r="280" fill="#FFF8E7" stroke="#5B2A86" stroke-width="12"/>
+  <circle cx="300" cy="300" r="260" fill="none" stroke="#D9A21B" stroke-width="3"/>
+  <!-- nón lá -->
+  <path d="M300 80 L450 230 Q300 262 150 230 Z" fill="#E8B83A" stroke="#8A5A00" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M212 180 Q300 202 388 180" fill="none" stroke="#8A5A00" stroke-width="3"/>
+  <path d="M181 207 Q300 232 419 207" fill="none" stroke="#8A5A00" stroke-width="3"/>
+  <path d="M300 80 L300 246" stroke="#8A5A00" stroke-width="2" opacity="0.5"/>
+  <path d="M300 80 L225 238" stroke="#8A5A00" stroke-width="2" opacity="0.5"/>
+  <path d="M300 80 L375 238" stroke="#8A5A00" stroke-width="2" opacity="0.5"/>
+  <!-- hoa sen -->
+  <g fill="#D95FA0" stroke="#FFF8E7" stroke-width="3">
+    <path d="M300 270 Q338 320 300 372 Q262 320 300 270 Z" fill="#C2418A"/>
+    <g transform="rotate(38 300 372)"><path d="M300 285 Q336 328 300 372 Q264 328 300 285 Z"/></g>
+    <g transform="rotate(-38 300 372)"><path d="M300 285 Q336 328 300 372 Q264 328 300 285 Z"/></g>
+    <g transform="rotate(72 300 372)"><path d="M300 305 Q330 338 300 372 Q270 338 300 305 Z" fill="#E88BBA"/></g>
+    <g transform="rotate(-72 300 372)"><path d="M300 305 Q330 338 300 372 Q270 338 300 305 Z" fill="#E88BBA"/></g>
+  </g>
+  <path d="M205 378 Q300 400 395 378" fill="none" stroke="#5B2A86" stroke-width="5" stroke-linecap="round"/>
+  <!-- chữ -->
+  <g font-family="Georgia, 'Times New Roman', serif" text-anchor="middle" font-weight="bold">
+    <text x="300" y="450" font-size="58" fill="#5B2A86" letter-spacing="3">HƯNG PHÁT</text>
+    <text x="300" y="490" font-size="21" fill="#8A5A00" letter-spacing="3">CỬA HÀNG LƯU NIỆM</text>
+    <text x="300" y="530" font-size="19" fill="#5B2A86" letter-spacing="2">HUẾ  ·  0914 10 10 32</text>
+  </g>
+</svg>
