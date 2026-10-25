@@ -71,6 +71,23 @@ function detail(id) {
   open('#pm');
 }
 
+function tiles() {
+  $('#tiles').innerHTML = CATS.map(c => {
+    const p = PRODUCTS.find(x => x.cat === c.id);
+    return `<button class="tile" data-tile="${c.id}"><img src="img/sp/${p.img}" alt="" loading="lazy"><span>${esc(cname(c))}</span></button>`;
+  }).join('');
+}
+
+const PAGES = ['home', 'san-pham', 'gioi-thieu', 'lien-he'];
+function route() {
+  let p = location.hash.replace('#', '');
+  if (!PAGES.includes(p)) p = 'home';
+  document.querySelectorAll('.page').forEach(s => s.hidden = s.dataset.page !== p);
+  document.querySelectorAll('#menu a').forEach(a => a.classList.toggle('on', a.dataset.p === p));
+  scrollTo(0, 0);
+}
+window.addEventListener('hashchange', route);
+
 function applyLang() {
   document.documentElement.lang = lang;
   document.title = t('title');
@@ -83,13 +100,14 @@ function applyLang() {
     el.placeholder = lang === 'en' ? el.dataset.enPh : el.dataset.viPh;
   });
   document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
-  render(); cartUI();
+  render(); cartUI(); tiles();
   if (!$('#pm').hidden && cur) detail(cur);
 }
 
 document.addEventListener('click', e => {
   const x = e.target;
   if (x.dataset.lang) { lang = x.dataset.lang; try { localStorage.setItem('hp_lang', lang); } catch (er) {} applyLang(); return; }
+  const tile = x.closest('.tile'); if (tile) { cat = tile.dataset.tile; render(); location.hash = '#san-pham'; if (location.hash === '#san-pham') route(); return; }
   if (x.dataset.c !== undefined && x.classList.contains('chip')) { cat = x.dataset.c; render(); return; }
   if (x.dataset.add) { e.stopPropagation(); add(x.dataset.add); x.textContent = t('added'); setTimeout(() => x.textContent = t('add'), 900); return; }
   if (x.dataset.q) { const i = x.dataset.id; cart[i] = (cart[i] || 0) + Number(x.dataset.q); if (cart[i] <= 0) delete cart[i]; save(); cartUI(); return; }
@@ -115,4 +133,4 @@ $('#orderForm').addEventListener('submit', e => {
     .catch(() => { prompt(t('copyAsk'), msg); go(); });
 });
 
-applyLang();
+applyLang(); route();
